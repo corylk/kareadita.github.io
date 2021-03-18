@@ -1,11 +1,11 @@
 {
-  "name": "lidarr.audio",
+  "name": "kavita",
   "version": "1.0.0",
-  "description": "Lidarr's Website",
+  "description": "Kavita's Website",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Lidarr/Lidarr.git"
+    "url": "git://github.com/Kareadita/Kavita.git"
   },
   "scripts": {
     "build": "gulp build",
@@ -26,6 +26,7 @@
     "marko": "^4.23.10",
     "plugin-error": "1.0.1",
     "replace-ext": "2.0.0",
-    "through2": "^4.0.2"
+    "through2": "^4.0.2",
+    "yarn": "^1.22.10"
   }
 }
