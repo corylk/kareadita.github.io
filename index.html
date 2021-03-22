@@ -54,9 +54,12 @@
     <div id=home></div>
     <section id=feature-slider class="lol feature-slider">
         <article class=slide id=showcasing>
-            <img class="asset left-572 sp650 t190 z3" src=img/slider/series-detail-sm.PNG>
-            <img class="asset left-285 sp550 t220 z2" src=img/slider/librarydetail-sm.PNG>
-            <img class="asset left-450 sp450 t110 z1" src=img/slider/mixedchapterandvolumes-sm.PNG>
+            <!-- <img class="asset left-572 sp650 t190 z3" src=img/slider/series-detail-sm.PNG>
+            <img class="asset left-285 sp600 t220 z2" src=img/slider/librarydetail-sm.PNG>
+            <img class="asset left-450 sp600 t110 z1" src=img/slider/mixedchapterandvolumes-sm.PNG> -->
+            <img class="asset left-200 sp650 t190 z3" src=img/slider/series-detail-sm.PNG>
+            <img class="asset left-60 sp600 t220 z2" src=img/slider/librarydetail-sm.PNG>
+            <img class="asset left-100 sp600 t110 z1" src=img/slider/mixedchapterandvolumes-sm.PNG>
             <div class=info>
                 <h2>Works great and looks even better doing it.</h2>
             </div>
@@ -79,11 +82,11 @@
             <img class="asset left-350 sp450 t110 z1" src=img/slider/mixedchapterandvolumes-sm.PNG>
             
         </article>
-        <article class=slide id=tour>
-            <img class="asset left-672 sp650 t100 z3" height="400px" src=img/slider/home-streams.PNG>
+        <article class=slide id=responsive>
             <div class=info>
                 <h2>Activity streams</h2>
             </div>
+            <img class="asset left-472 sp450 t90 z3" height="400px" src=img/slider/home-streams.PNG>
         </article>
     </section>
     <div id=summary class=summary>
@@ -93,9 +96,8 @@
             </div>
             <div class=container>
                 <div id=summary-text class=summary-text>
-                    Kavita, meaning Stories, is a full fledged, fast manga server. Built from the ground up to serve as a self-hosted, open-source  
-                    manga server. Built with Role-based Security, User Authentication & Preferences to create a solution that feels right. 
-
+                    Kavita, meaning Stories, is a full fledged, fast, cross platform, &amp; open-source manga server. Built from the ground up with a focus on manga and a goal of being a full solution to 
+                    your reading needs. Setup your own server and share your manga collection with your friends and family.   
                 </div>
             </div>
         </div>
@@ -190,11 +192,11 @@
                 </div>
             </div>
             <div class="row feature">
-                <h3>And more!</h3>
+                <h3>And More!</h3>
                 <ul>
-                    <li>Zip, CBZ Support (RAR, CBR coming)</li>
+                    <li>Zip, CBZ, RAR, CBR Support</li>
                     <li>Multi-zip mapping to volumes, seemless to end user</li>
-                    <li>Grouping of volumes/chapters by a parsed Series name, not folders</li>
+                    <li>Grouping of volumes/chapters by a parsed Series name, not just grouping by folder</li>
                     <li>Cross Platform with no dependencies - Everything in the box</li>
                     <li>Responsive and Fast!</li>
                     <li>Full text search to quickly find your manga</li>
@@ -237,26 +239,25 @@
                             <dt>Introduction</dt>
                             <dd>
                                 <p>
-                                    Lidarr is supported natively on Windows. Lidarr can be installed on Windows as Windows Service or system tray application.
+                                    Kavita is supported natively on Windows. Lidarr can be installed on Windows as Windows Service or system tray application.
                                 </p>
                                 <p>
                                     A Windows Service runs even when the user is not logged in, but special case must be taken since Windows Services cannot access network drives (\\server\share or X:\ mapped drives) without special configuration steps.<br>
                                     It's therefore advisable to install Lidarr as a system tray application if the user does not need to log out, the option to do so is provided during the installer.
                                 </p>
-                                <div class="alert alert-warning">Lidarr v0.8 no longer supports Windows XP. At this time Windows 7 <i>should</i> still work, but we will not maintain Windows 7 support. Note that KB2533623 and Microsoft Visual C++ 2015 Redistributable Update 3 are needed to run .net core apps on Windows 7</div>
+                                <div class="alert alert-warning">Kavita supports Windows 10 only</div>
                             </dd>
-                            <dt><span class=step>1</span>Install Lidarr</dt>
+                            <dt><span class=step>1</span>Install Kavita</dt>
                             <dd>
                                 <p>
                                     Download the Windows Installer with the following link and execute it.
                                 </p>
-                                <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x64&installer=true>Download Windows x64 Installer</a>
-                                <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x86&installer=true>Download Windows x86 Installer</a>
+                                <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Windows Installer</a>
                             </dd>
-                            <dt><span class=step>2</span>View Lidarr</dt>
+                            <dt><span class=step>2</span>View Kavita</dt>
                             <dd>
                                 <p>
-                                    Browse to <code>http://localhost:8686</code> to start using Lidarr.
+                                    Browse to <code>http://localhost:5000</code> to start using Lidarr.
                                 </p>
                             </dd>
                         </dl>
@@ -300,15 +301,15 @@
                                             <pre><code class=bash>yay -S Lidarr</code></pre>
                                             </p>
                                         </dd>
-                                        <dt><span class=step>2</span>Start Lidarr</dt>
+                                        <dt><span class=step>2</span>Start Kavita</dt>
                                         <dd>
                                             <pre><code class=bash>sudo systemctl daemon_reload
 sudo systemctl enable --now Lidarr</code></pre>
                                         </dd>
-                                        <dt><span class=step>3</span>View Lidarr</dt>
+                                        <dt><span class=step>3</span>View Kavita</dt>
                                         <dd>
                                             <p>
-                                                Browse to <code>http://localhost:8686</code> to start using Lidarr.
+                                                Browse to <code>http://localhost:5000</code> to start using Lidarr.
                                             </p>
                                             <i>(Replace 'localhost' with your server IP if you're connecting remotely)</i>
                                         </dd>
@@ -362,7 +363,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                             </dd>
                             <dt><span class=step>1</span>Download App package</dt>
                             <dd>
-                                <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64&installer=true>Download macOS App</a>
+                                <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download macOS App</a>
                             </dd>
                             <dt><span class=step>2</span>Install App</dt>
                             <dd>
@@ -384,7 +385,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                             <dt><span class=step>4</span>View Lidarr</dt>
                             <dd>
                                 <p>
-                                    Browse to <code>http://localhost:8686</code> to start using Lidarr.
+                                    Browse to <code>http://localhost:5000</code> to start using Lidarr.
                                 </p>
                             </dd>
                         </dl>
