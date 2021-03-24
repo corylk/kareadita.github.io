@@ -44,7 +44,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href=#home><i class="fas fa-home" aria-hidden="true"></i> HOME</a></li>
                     <li><a href=#features><i class="fas fa-star" aria-hidden="true"></i> FEATURES</a></li>
-                    <!-- <li><a href=#download><i class="fas fa-download" aria-hidden="true"></i> DOWNLOAD</a></li> -->
+                    <li><a href=#download><i class="fas fa-download" aria-hidden="true"></i> DOWNLOAD</a></li>
                     <li><a href=#support><i class="fas fa-question-circle" aria-hidden="true"></i> SUPPORT</a></li>
                     <li><a href=https://github.com/Kareadita/Kavita target=_blank><i class="fab fa-github-alt" aria-hidden="true"></i> GITHUB</a></li>
                 </ul>
@@ -54,9 +54,6 @@
     <div id=home></div>
     <section id=feature-slider class="lol feature-slider">
         <article class=slide id=showcasing>
-            <!-- <img class="asset left-572 sp650 t190 z3" src=img/slider/series-detail-sm.PNG>
-            <img class="asset left-285 sp600 t220 z2" src=img/slider/librarydetail-sm.PNG>
-            <img class="asset left-450 sp600 t110 z1" src=img/slider/mixedchapterandvolumes-sm.PNG> -->
             <img class="asset left-200 sp650 t190 z3" src=img/slider/series-detail-sm.PNG>
             <img class="asset left-60 sp600 t220 z2" src=img/slider/librarydetail-sm.PNG>
             <img class="asset left-100 sp600 t110 z1" src=img/slider/mixedchapterandvolumes-sm.PNG>
@@ -207,7 +204,7 @@
             </div>
         </div>
     </div>
-    <!-- <div id=download class=download>
+    <div id=download class=download>
         <div class=container>
             <div class=section-header>
                 <h3>Download</h3>
@@ -223,12 +220,12 @@
                     <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-macos><i class="fab fa-apple"></i> macOS</a>
                     </li>
-                    <li class=nav-item>
+                    <!-- <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-nas><i class="fas fa-hdd"></i> NAS</a>
                     </li>
                     <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-docker><i class="fab fa-docker"></i> Docker</a>
-                    </li>
+                    </li> -->
                     <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-other><i class="fas fa-ellipsis-v"></i>&nbsp;&nbsp;Others</a>
                     </li>
@@ -239,12 +236,12 @@
                             <dt>Introduction</dt>
                             <dd>
                                 <p>
-                                    Kavita is supported natively on Windows. Lidarr can be installed on Windows as Windows Service or system tray application.
+                                    Kavita is supported natively on Windows.<!-- Kavita can be installed on Windows as Windows Service or system tray application.-->
                                 </p>
-                                <p>
+                                <!-- <p>
                                     A Windows Service runs even when the user is not logged in, but special case must be taken since Windows Services cannot access network drives (\\server\share or X:\ mapped drives) without special configuration steps.<br>
                                     It's therefore advisable to install Lidarr as a system tray application if the user does not need to log out, the option to do so is provided during the installer.
-                                </p>
+                                </p> -->
                                 <div class="alert alert-warning">Kavita supports Windows 10 only</div>
                             </dd>
                             <dt><span class=step>1</span>Install Kavita</dt>
@@ -257,11 +254,11 @@
                             <dt><span class=step>2</span>View Kavita</dt>
                             <dd>
                                 <p>
-                                    Browse to <code>http://localhost:5000</code> to start using Lidarr.
+                                    Browse to <code>http://localhost:5000</code> to start using Kavita.
                                 </p>
                             </dd>
                         </dl>
-                        <div class=install-alternatives>
+                        <!-- <div class=install-alternatives>
                             <div class=collapsed data-toggle=collapse data-target=#downloads-v1-windows-alternatives>Alternatives for advanced users</div>
                             <div class=collapse id=downloads-v1-windows-alternatives>
                                 <h5>Manual Install</h5>
@@ -269,20 +266,20 @@
                                     It is possible to install Lidarr manually using the x64 <a href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x64>.zip download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="tab-pane fade" id=downloads-v1-linux role=tabpanel>
                         <div>
                             <ul class="nav nav-pills">
-                                <li class="nav-item active">
+                                <!-- <li class="nav-item active">
                                     <a class="nav-link active" data-toggle=pill href=#downloads-v1-linux-archlinux><img src=logo/archlinux.svg class="icon svg"> ArchLinux</a>
-                                </li>
+                                </li> -->
                                 <li class=nav-item>
-                                    <a class=nav-link data-toggle=pill href=#downloads-v1-linux-other><i class="fas fa-ellipsis-v"></i>&nbsp;&nbsp;Others</a>
+                                    <a class="nav-link active" data-toggle=pill href=#downloads-v1-linux-other><i class="fas fa-ellipsis-v"></i>&nbsp;&nbsp;Others</a>
                                 </li>
                             </ul>
                             <div class=tab-content id=download-v1-linux-tabcontent>
-                                <div class="tab-pane fade active in" id=downloads-v1-linux-archlinux role=tabpanel>
+                                <!-- <div class="tab-pane fade active in" id=downloads-v1-linux-archlinux role=tabpanel>
                                     <dl class=install-steps>
                                         <dt>Introduction</dt>
                                         <dd>
@@ -327,26 +324,26 @@ sudo systemctl enable --now Lidarr</code></pre>
                                             </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id=downloads-v1-linux-other role=tabpanel>
+                                </div> -->
+                                <div class="tab-pane fade active" id=downloads-v1-linux-other role=tabpanel>
                                     <div class=install-description>
                                         <div class="alert alert-info">
-                                            Please contact us if you wish to port Lidarr for any other distribution that the ones already listed.
+                                            Please contact us if you wish to port Kavita for any other distribution that the ones already listed.
                                         </div>
                                         <p>
                                             Generic .tar.gz downloads are available for linux, but dependencies, installation and permissions will need to be done manually.
                                         </p>
                                         <div>
-                                            <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64>Download Linux x64 (netcore)</a>
+                                            <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Linux x64 (netcore)</a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=arm>Download Linux arm (netcore)</a>
+                                            <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Linux arm (netcore)</a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=arm64>Download Linux arm64 (netcore)</a>
+                                            <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Linux arm64 (netcore)</a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=linuxmusl&runtime=netcore&arch=x64>Download Linux Musl x64 (netcore)</a>
+                                            <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Linux Musl x64 (netcore)</a>
                                         </div>
                                     </div>
                                 </div>
@@ -358,7 +355,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                             <dt>Introduction</dt>
                             <dd>
                                 <p>
-                                    The easiest way to install Lidarr on macOS is to use the App archive with the steps described below.
+                                    The easiest way to install Kavita on macOS is to use the App archive with the steps described below.
                                 </p>
                             </dd>
                             <dt><span class=step>1</span>Download App package</dt>
@@ -368,82 +365,42 @@ sudo systemctl enable --now Lidarr</code></pre>
                             <dt><span class=step>2</span>Install App</dt>
                             <dd>
                                 <p>
-                                    Open the archive and drag the Lidarr icon to your Application folder.
+                                    Open the archive and drag the Kavita icon to your Application folder.
                                 </p>
                                 <div class="alert alert-warning">
-                                    Lidarr v0.8+ is not compatible with OSX versions < 10.13 due to netcore compatability. </div>
+                                    Kavita v0.8+ is not compatible with OSX versions < 10.13 due to netcore compatability. </div>
                             </dd>
-                            <dt><span class=step>3</span>Start Lidarr</dt>
+                            <dt><span class=step>3</span>Start Kavita</dt>
                             <dd>
                                 <p>
-                                    Open Lidarr.app in your Application folder.
+                                    Open Kavita.app in your Application folder.
                                 </p>
                                 <div class="alert alert-info">
                                     During startup it may ask you to install the Mono Runtime if an appropriate version is not already installed.
                                 </div>
                             </dd>
-                            <dt><span class=step>4</span>View Lidarr</dt>
+                            <dt><span class=step>4</span>View Kavita</dt>
                             <dd>
                                 <p>
-                                    Browse to <code>http://localhost:5000</code> to start using Lidarr.
+                                    Browse to <code>http://localhost:5000</code> to start using Kavita.
                                 </p>
                             </dd>
                         </dl>
-                        <div class=install-alternatives>
+                        <!-- <div class=install-alternatives>
                             <div class=collapsed data-toggle=collapse data-target=#downloads-v1-macos-alternatives>Alternatives for advanced users</div>
                             <div class=collapse id=downloads-v1-macos-alternatives>
                                 <h5>Manual Install</h5>
                                 <p>
-                                    It is possible to install Lidarr manually using the <a href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+                                    It is possible to install Kavita manually using the <a href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                 </p>
                                 <h5>Docker container</h5>
                                 <p>
-                                    You can follow the <a href=#downloads-v1-docker>Docker guide</a> to install Lidarr as a Docker container instead.
+                                    You can follow the <a href=#downloads-v1-docker>Docker guide</a> to install Kavita as a Docker container instead.
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="tab-pane fade" id=downloads-v1-nas role=tabpanel>
-                        <div>
-                            <ul class="nav nav-pills">
-                                <li class="nav-item active">
-                                    <a class="nav-link active" data-toggle=pill href=#downloads-v1-nas-synology> Synology</a>
-                                </li>
-                                <li class=nav-item>
-                                    <a class=nav-link data-toggle=pill href=#downloads-v1-nas-qnap>QNAP</a>
-                                </li>
-                                <li class=nav-item>
-                                    <a class=nav-link data-toggle=pill href=#downloads-v1-nas-other><i class="fas fa-ellipsis-v"></i>&nbsp;&nbsp;Others</a>
-                                </li>
-                            </ul>
-                            <div class=tab-content id=download-v1-nas-tabcontent>
-                                <div class="tab-pane fade active in" id=downloads-v1-nas-synology role=tabpanel>
-                                    <div class="alert alert-info">
-                                        A package and installation instructions are provided by SynoCommunity at: <a href=https://synocommunity.com/package/Lidarr>https://synocommunity.com/package/Lidarr</a>.
-                                        Please note that the SynoCommunity typically has signifcant lag in providing updated packages, thus you may want to check out Docker.
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id=downloads-v1-nas-qnap role=tabpanel>
-                                    <div class="alert alert-info">
-                                        The Lidarr v0.7 Qnap port was maintained by the Qnap forum community.<br>
-                                        Please contact us if you wish to maintain a v0.8 package so that we can include the appropriate install instructions.
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id=downloads-v1-nas-other role=tabpanel>
-                                    <div class=install-description>
-                                        <div class="alert alert-info">
-                                            Please contact us if you wish to port Lidarr for any other nas that the ones already listed.
-                                        </div>
-                                        <p>
-                                            A generic download is available for linux, but dependencies, installation, and permissions will need to be done manually.
-                                        </p>
-                                        <a class="btn btn-Lidarr" href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64>Download Linux .tar.gz</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id=downloads-v1-docker role=tabpanel>
+                    <!-- <div class="tab-pane fade" id=downloads-v1-docker role=tabpanel>
                         <dl class=install-steps>
                             <dt>Introduction</dt>
                             <dd>
@@ -504,17 +461,17 @@ sudo systemctl enable --now Lidarr</code></pre>
                                 </p>
                             </dd>
                         </dl>
-                    </div>
+                    </div> -->
                     <div class="tab-pane fade" id=downloads-v1-other role=tabpanel>
                         <div class="alert alert-info">
-                            Please contact us if you wish to port Lidarr for any other platform that the ones already listed.<br>
+                            Please contact us if you wish to port Kavita for any other platform that the ones already listed.<br>
                             We prefer to coordinate the port.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <div id=support class=support>
         <div class=container>
             <div class=section-header>
