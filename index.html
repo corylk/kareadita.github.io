@@ -1,17 +1,13 @@
 <html>
 
 <head>
-    <script async src=https://www.googletagmanager.com/gtag/js?id=G-H9DLX878J1></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-H9DLX878J1');
-    </script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P27D95G');</script>
+    <!-- End Google Tag Manager -->
     <title>Kavita</title>
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1.0">
@@ -29,6 +25,10 @@
 </head>
 
 <body class=pull_top data-spy=scroll data-target=.header-navbar data-offset=70>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P27D95G"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="navbar navbar-inverse navbar-fixed-top" role=navigation>
         <div class=container>
             <div class=navbar-header>
@@ -93,7 +93,7 @@
             </div>
             <div class=container>
                 <div id=summary-text class=summary-text>
-                    Kavita, meaning Stories, is a full fledged, fast, cross platform, &amp; open-source manga server. Built from the ground up with a focus on manga and a goal of being a full solution to 
+                    Kavita, meaning Stories, is a full fledged, fast, cross platform, &amp; open-source manga (and comic) server. Built from the ground up with a focus on manga and a goal of being a full solution to 
                     your reading needs. Setup your own server and share your manga collection with your friends and family.   
                 </div>
             </div>
@@ -200,6 +200,7 @@
                     <li>Break up your Manga collection into Libraries each with user access rules</li>
                     <li>Create users and share your collection with your friends</li>
                     <li>Rate and review your Manga right in app</li>
+                    <li>Comic support</li>
                 </ul>
             </div>
         </div>
@@ -222,10 +223,10 @@
                     </li>
                     <!-- <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-nas><i class="fas fa-hdd"></i> NAS</a>
-                    </li>
+                    </li> -->
                     <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-docker><i class="fab fa-docker"></i> Docker</a>
-                    </li> -->
+                    </li>
                     <li class=nav-item>
                         <a class=nav-link data-toggle=tab href=#downloads-v1-other><i class="fas fa-ellipsis-v"></i>&nbsp;&nbsp;Others</a>
                     </li>
@@ -400,16 +401,16 @@ sudo systemctl enable --now Lidarr</code></pre>
                             </div>
                         </div> -->
                     </div>
-                    <!-- <div class="tab-pane fade" id=downloads-v1-docker role=tabpanel>
+                    <div class="tab-pane fade" id=downloads-v1-docker role=tabpanel>
                         <dl class=install-steps>
                             <dt>Introduction</dt>
                             <dd>
                                 <p>
-                                    The Lidarr team does not offer an official Docker image. However, a number of third parties have created and maintain their own.<br>
-                                    These instructions provide generic guidance that should apply to any Lidarr Docker image.
+                                    The Kavita team does not offer an official Docker image. However, third parties have created and maintain their own.<br>
+                                    <!-- These instructions provide generic guidance that should apply to any Kavita Docker image. -->
                                 </p>
                             </dd>
-                            <dt><span class=step>1</span>Avoid common pitfalls</dt>
+                            <!-- <dt><span class=step>1</span>Avoid common pitfalls</dt>
                             <dd>
                                 <h5>Volumes and Paths</h5>
                                 <p>
@@ -436,32 +437,31 @@ sudo systemctl enable --now Lidarr</code></pre>
                                 <p>
                                     <i>For a more detailed explanation of these issues, see <a href=https://wiki.servarr.com/Docker_Guide>The Best Docker Setup and Docker Guide</a> wiki article.</i>
                                 </p>
-                            </dd>
-                            <dt><span class=step>2</span>Install Lidarr</dt>
+                            </dd> -->
+                            <dt><span class=step>1</span>Install Kavita</dt>
                             <dd>
                                 <p>
-                                    To install and use these Docker images, you'll need to keep the above in mind while following their documentation. There are many ways to manage Docker images and containers too, so installation
-                                    and maintenance of them will depend on the route you choose.
+                                    To install and use these Docker images, follow the instructions at the repo below.
                                 <ul>
                                     <li>
-                                        <h5><a href=https://hub.docker.com/r/hotio/Lidarr>hotio/Lidarr:release</a></h5>
-                                        <p>
+                                        <h5><a href=https://github.com/Kizaing/KavitaDocker>Kizaing/KavitaDocker</a></h5>
+                                        <!-- <p>
                                             <a href=https://hotio.dev>hotio</a> doesn't specify any default volumes, besides <code>/config</code>. Images are automatically updated 2x in 1 hour if upstream changes are found.
                                             Read the <a href=https://hotio.dev/containers/Lidarr>instructions</a> on how to install the image.
-                                        </p>
+                                        </p> -->
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <h5><a href=https://hub.docker.com/r/linuxserver/Lidarr>ghcr.io/linuxserver/Lidarr:latest</a></h5>
                                         <p>
                                             <a href=//www.linuxserver.io>linuxserver.io</a> is one of the most prolific and popular Docker image maintainers. They also maintain images for most of the popular download clients as well.
                                             LinuxServer specifies a couple of default volumes such as <code>/music</code> and <code>/downloads</code>. Our recommendation is to use a single volume for the data, as mentioned above.
                                         </p>
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 </p>
                             </dd>
                         </dl>
-                    </div> -->
+                    </div>
                     <div class="tab-pane fade" id=downloads-v1-other role=tabpanel>
                         <div class="alert alert-info">
                             Please contact us if you wish to port Kavita for any other platform that the ones already listed.<br>
@@ -478,7 +478,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                 <h3>Support</h3>
             </div>
             <div class=row>
-                <a class=col-sm-4 href=https://github.com/Kareadita/Kavita/wiki target=_blank>
+                <a class=col-sm-3 href=https://github.com/Kareadita/Kavita/wiki target=_blank>
                     <div class=text>
                         <i class="far fa-lightbulb fa-2x"></i>
                         <h4>Wiki</h4>
@@ -487,7 +487,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                         </p>
                     </div>
                 </a>
-                <a class=col-sm-4 href=https://discord.gg/eczRp9eeem target=_blank>
+                <a class=col-sm-3 href=https://discord.gg/eczRp9eeem target=_blank>
                     <div class=text>
                         <i class="fab fa-discord fa-2x"></i>
                         <h4>Discord</h4>
@@ -496,7 +496,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                         </p>
                     </div>
                 </a>
-                <a class=col-sm-4 href=https://github.com/Kareadita/Kavita/issues target=_blank>
+                <a class=col-sm-3 href=https://github.com/Kareadita/Kavita/issues target=_blank>
                     <div class=text>
                         <i class="fab fa-github fa-2x"></i>
                         <h4>GitHub Issues</h4>
