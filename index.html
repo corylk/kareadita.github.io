@@ -282,80 +282,46 @@
                                 </p>
                                 <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Windows Installer</a>
                             </dd>
-                            <dt><span class=step>2</span>View Kavita</dt>
+                            <dt><span class=step>2</span>Open INSTALL</dt>
+                            <dd>
+                                <p>
+                                    Read the instructions in the INSTALL document
+                                </p>
+                            </dd>
+                            <dt><span class=step>3</span>View Kavita</dt>
                             <dd>
                                 <p>
                                     Browse to <code>http://localhost:5000</code> to start using Kavita.
                                 </p>
                             </dd>
                         </dl>
-                        <!-- <div class=install-alternatives>
-                            <div class=collapsed data-toggle=collapse data-target=#downloads-v1-windows-alternatives>Alternatives for advanced users</div>
-                            <div class=collapse id=downloads-v1-windows-alternatives>
-                                <h5>Manual Install</h5>
-                                <p>
-                                    It is possible to install Lidarr manually using the x64 <a href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x64>.zip download</a>. However in that case you must manually deal with dependencies, installation and permissions.
-                                </p>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="tab-pane fade" id=downloads-v1-linux role=tabpanel>
                         <div>
-                            <ul class="nav nav-pills">
-                                <!-- <li class="nav-item active">
-                                    <a class="nav-link active" data-toggle=pill href=#downloads-v1-linux-archlinux><img src=logo/archlinux.svg class="icon svg"> ArchLinux</a>
-                                </li> -->
-                                <li class=nav-item>
-                                    <a class="nav-link active" data-toggle=pill href=#downloads-v1-linux-other><i class="fas fa-ellipsis-v"></i>&nbsp;&nbsp;Others</a>
-                                </li>
-                            </ul>
                             <div class=tab-content id=download-v1-linux-tabcontent>
-                                <!-- <div class="tab-pane fade active in" id=downloads-v1-linux-archlinux role=tabpanel>
-                                    <dl class=install-steps>
-                                        <dt>Introduction</dt>
-                                        <dd>
-                                            <p>
-                                                The Arch Linux User Repository offers a <a href=https://aur.archlinux.org/packages/Lidarr/>Lidarr</a> package that can be installed manually
-                                                or using your favorite <a href=https://wiki.archlinux.org/index.php/AUR_helpers>AUR helper</a>.
-                                            </p>
-                                        </dd>
-                                        <dt><span class=step>1</span>Install Lidarr</dt>
-                                        <dd>
-                                            <p>
-                                                An aur helper can install Lidarr and its dependencies easily, or follow the <a href=https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages>AUR Installing Packages</a> wiki for manual installation.
-                                            </p>
-                                            <p>
-                                                For example, to use <a href=https://github.com/Jguer/yay>yay</a> to install the Lidarr package:
-                                            <pre><code class=bash>yay -S Lidarr</code></pre>
-                                            </p>
-                                        </dd>
-                                        <dt><span class=step>2</span>Start Kavita</dt>
-                                        <dd>
-                                            <pre><code class=bash>sudo systemctl daemon_reload
-sudo systemctl enable --now Lidarr</code></pre>
-                                        </dd>
-                                        <dt><span class=step>3</span>View Kavita</dt>
-                                        <dd>
-                                            <p>
-                                                Browse to <code>http://localhost:5000</code> to start using Lidarr.
-                                            </p>
-                                            <i>(Replace 'localhost' with your server IP if you're connecting remotely)</i>
-                                        </dd>
-                                    </dl>
-                                    <div class=install-alternatives>
-                                        <div class=collapsed data-toggle=collapse data-target=#downloads-v1-linux-archlinux-alternatives>Alternatives for advanced users</div>
-                                        <div class=collapse id=downloads-v1-linux-archlinux-alternatives>
-                                            <h5>Manual Install</h5>
-                                            <p>
-                                                It is possible to install Lidarr manually from upstream using the <a href=https://Lidarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
-                                            </p>
-                                            <h5>Docker container</h5>
-                                            <p>
-                                                You can follow the <a href=#downloads-v1-docker>Docker guide</a> to install Lidarr as a Docker container instead.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div> -->
+                                <dl class=install-steps>
+                                    <dt>Introduction</dt>
+                                    <dt><span class=step>1</span>Install Kavita</dt>
+                                    <dd>
+                                        <p>
+                                            Download the linux archive with the following link and execute it.
+                                        </p>
+                                        <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Linux Installer</a>
+                                    </dd>
+                                    <dt><span class=step>2</span>Open INSTALL</dt>
+                                    <dd>
+                                        <p>
+                                            Read the instructions in the INSTALL document
+                                        </p>
+                                    </dd>
+                                    <dt><span class=step>3</span>View Kavita</dt>
+                                    <dd>
+                                        <p>
+                                            Browse to <code>http://localhost:5000</code> to start using Kavita.
+                                        </p>
+                                    </dd>
+                                </dl>
+                                
                                 <div class="tab-pane fade active" id=downloads-v1-linux-other role=tabpanel>
                                     <div class=install-description>
                                         <div class="alert alert-info">
@@ -396,7 +362,7 @@ sudo systemctl enable --now Lidarr</code></pre>
                             <dt><span class=step>2</span>Install App</dt>
                             <dd>
                                 <p>
-                                    Open the archive and drag the Kavita icon to your Application folder.
+                                    Open the archive and unzip to a folder
                                 </p>
                                 <div class="alert alert-warning">
                                     Kavita v0.8+ is not compatible with OSX versions < 10.13 due to netcore compatability. </div>
@@ -404,11 +370,8 @@ sudo systemctl enable --now Lidarr</code></pre>
                             <dt><span class=step>3</span>Start Kavita</dt>
                             <dd>
                                 <p>
-                                    Open Kavita.app in your Application folder.
+                                    Open Kavita.app in your folder.
                                 </p>
-                                <div class="alert alert-info">
-                                    During startup it may ask you to install the Mono Runtime if an appropriate version is not already installed.
-                                </div>
                             </dd>
                             <dt><span class=step>4</span>View Kavita</dt>
                             <dd>
