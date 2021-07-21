@@ -46,6 +46,7 @@
                     <li><a href=#features><i class="fas fa-star" aria-hidden="true"></i> FEATURES</a></li>
                     <li><a href=#download><i class="fas fa-download" aria-hidden="true"></i> DOWNLOAD</a></li>
                     <li><a href=#support><i class="fas fa-question-circle" aria-hidden="true"></i> SUPPORT</a></li>
+                    <li><a href=#demo><i class="fas fa-desktop" aria-hidden="true"></i> DEMO</a></li>
                     <li><a href=https://github.com/Kareadita/Kavita target=_blank><i class="fab fa-github-alt" aria-hidden="true"></i> GITHUB</a></li>
                 </ul>
             </div>
@@ -95,6 +96,25 @@
                 <div id=summary-text class=summary-text>
                     Kavita, meaning Stories, is a full fledged, fast, cross platform, &amp; open-source manga, comic, and book server. Built from the ground up with a focus on manga and a goal of being a full solution to 
                     your reading needs. Setup your own server and share your manga collection with your friends and family.   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id=demo class=features>
+        <div class=container>
+            <div class=section-header>
+                <h3>Demo</h3>
+            </div>
+            <div class=row>
+                <div style="margin-left: 15px">
+                    <p>
+                        We have a demo available at: <a href=https://demo.kavitareader.com/ target=_blank>https://demo.kavitareader.com</a>
+                    </p>
+                    <p>You can login with the following credentials:</p>
+                    <p>
+                        Username: <code>demouser</code><br>
+                        Password: <code>Demouser64</code>
+                    </p>
                 </div>
             </div>
         </div>
@@ -190,13 +210,12 @@
             </div>
             <div class="row feature">
                 <div class="col-sm-6">
-                    <!-- TODO: Replace with gif -->
                     <img src=img/features/new-reader.gif class="pull-right img-responsive">
                 </div>
                 <div class="col-sm-6 info info-right">
                     <h3>
                         <i class="fas fa-chevron-left"></i>
-                        Built-in Manga/Comic Reader
+                        Built-in Manga/Comic/Image Reader
                     </h3>
                     <p>
                         A simple and responsive manga reader with impressive caching, never feel loading times when reading again.
@@ -205,7 +224,7 @@
             </div>
             <div class="row feature">
                 <div class="col-sm-6 pic-right">
-                    <img src=img/features/bookreader.PNG class="pull-right img-responsive">
+                    <img src=img/features/book-reader.gif class="pull-right img-responsive">
                 </div>
                 <div class="col-sm-6 info info-left">
                     <h3>
@@ -220,19 +239,44 @@
             <div class="row feature">
                 <h3>And More!</h3>
                 <ul>
-                    <li>Zip, CBZ, RAR, CBR, EPUB Support</li>
-                    <li>Multi-zip mapping to volumes, seemless to end user</li>
-                    <li>Grouping of volumes/chapters by a parsed Series name, not just grouping by folder</li>
+                    <li id="file-support">Extensive File support</li>
+                    <ul aria-describedby="file-support">
+                        <li>Manga/Comics: ZIP, RAR, CBR, CBZ, CB7, CBT, TAR.GZ, 7ZIP/7Z</li>
+                        <li>Books: EPUB2, EPUB3</li>
+                        <li>Raw Images: JPG/JPEG, PNG</li>
+                    </ul>
+                    <li id="manga-reader">Manga/Comic Reader</li>
+                    <ul aria-describedby="manga-reader">
+                        <li>Image Scaling to fit your device screen or override for what feels best to you</li>
+                        <li>Image Splitting for those joined page spreads, don't scroll on your tablet, just split</li>
+                        <li>Apply a custom dark or sepia tone to your images to make it easier to read at night</li>
+                        <li>Reading Direction: Left/Right, Up/Down</li>
+                        <li>Webtoon reader built in</li>
+                        <li>Read across archives without closing the reader</li>
+                    </ul>
+                    <li id="book-reader">Book Reader</li>
+                    <ul aria-describedby="book-reader">
+                        <li>Interactive reader - can interact with text, run javascript</li>
+                        <li>Dark mode persists between page load</li>
+                        <li>Can tap to paginate or use dedicated buttons</li>
+                        <li>Customize your reading experience with custom Font, Font Size, Margin, Reading Direction, Dark Mode</li>
+                        <li>Table of Content just a click away</li>
+                        <li>Remember line position and resume where you left off, no matter the device</li>
+                    </ul>
+                    <li>User Management and Sharing</li>
+                    <ul>
+                        <li>Create users and share your libraries with them</li>
+                        <li>Grant users permissions to view libraries or see different mixed-media collections</li>
+                        <li>Built-in ratings and review for each of your users</li>
+                    </ul>
                     <li>Cross Platform with no dependencies - Everything in the box</li>
                     <li>Responsive and Fast!</li>
-                    <li>Full text search to quickly find your manga</li>
-                    <li>Break up your Manga collection into Libraries each with user access rules</li>
-                    <li>Create users and share your collection with your friends</li>
-                    <li>Rate and review your Manga right in app</li>
-                    <li>Comic support</li>
-                    <li>Book support</li>
-                    <li>Custom collection support with ability to promote collections to all users on server</li>
+                    <li>Full text search to quickly find what you want to read</li>
+                    <li>Accessibility first - audits for color contrast, screen reader, and keyboard only</li>
                     <li>Frequent updates with new features</li>
+
+                    <!-- <li>Multi-archive mapping to volumes, seemless to end user</li>
+                    <li>Grouping of entities by a parsing filenames (or reading metadata), not just by folder structure</li> -->
                 </ul>
             </div>
         </div>
@@ -269,28 +313,17 @@
                             <dt>Introduction</dt>
                             <dd>
                                 <p>
-                                    Kavita is supported natively on Windows.<!-- Kavita can be installed on Windows as Windows Service or system tray application.-->
+                                    Kavita is supported natively on Windows
                                 </p>
-                                <!-- <p>
-                                    A Windows Service runs even when the user is not logged in, but special case must be taken since Windows Services cannot access network drives (\\server\share or X:\ mapped drives) without special configuration steps.<br>
-                                    It's therefore advisable to install Lidarr as a system tray application if the user does not need to log out, the option to do so is provided during the installer.
-                                </p> -->
-                                <div class="alert alert-warning">Kavita supports Windows 10 only</div>
                             </dd>
                             <dt><span class=step>1</span>Install Kavita</dt>
                             <dd>
                                 <p>
-                                    Download the Windows Installer with the following link and execute it.
+                                    Download the Windows Installer with the following link, extract the Kavita directory and execute Kavita.exe
                                 </p>
                                 <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Windows Installer</a>
                             </dd>
-                            <dt><span class=step>2</span>Open INSTALL</dt>
-                            <dd>
-                                <p>
-                                    Read the instructions in the INSTALL document
-                                </p>
-                            </dd>
-                            <dt><span class=step>3</span>View Kavita</dt>
+                            <dt><span class=step>2</span>View Kavita</dt>
                             <dd>
                                 <p>
                                     Browse to <code>http://localhost:5000</code> to start using Kavita.
@@ -306,17 +339,11 @@
                                     <dt><span class=step>1</span>Install Kavita</dt>
                                     <dd>
                                         <p>
-                                            Download the linux archive with the following link and execute it.
+                                            Download the linux archive with the following link, chmod +x ./Kavita and execute it.
                                         </p>
                                         <a class="btn btn-Lidarr" href=https://github.com/Kareadita/Kavita/releases>Download Linux Installer</a>
                                     </dd>
-                                    <dt><span class=step>2</span>Open INSTALL</dt>
-                                    <dd>
-                                        <p>
-                                            Read the instructions in the INSTALL document
-                                        </p>
-                                    </dd>
-                                    <dt><span class=step>3</span>View Kavita</dt>
+                                    <dt><span class=step>2</span>View Kavita</dt>
                                     <dd>
                                         <p>
                                             Browse to <code>http://localhost:5000</code> to start using Kavita.
@@ -401,58 +428,42 @@
                             <dt>Introduction</dt>
                             <dd>
                                 <p>
-                                    The Kavita team does not offer an official Docker image. However, third parties have created and maintain their own.<br>
-                                    <!-- These instructions provide generic guidance that should apply to any Kavita Docker image. -->
+                                    The Kavita team has their own docker images, actively maintained.
                                 </p>
+                                <p>There are currently 3 tags:</p>
+                                <ul>
+                                    <li><code>:nightly</code> which is the bleeding edge builds. Best to use if you are in the discord to actively test</li>
+                                    <li><code>:latest</code> which is the latest stable build</li>
+                                    <li><code>:alpine</code> which is a smaller image, but only supported on x64 systems</li>
+                                </ul>
                             </dd>
-                            <!-- <dt><span class=step>1</span>Avoid common pitfalls</dt>
-                            <dd>
-                                <h5>Volumes and Paths</h5>
-                                <p>
-                                    There are two common problems with Docker volumes: Paths that differ between the Lidarr and download client container and paths that prevent fast moves and hard links.<br>
-                                    The first is a problem because the download client will report a download's path as <code>/torrents/Some.Artist/</code>, but in the Lidarr container that might be at
-                                    <code>/downloads/Some.Artist/</code>. The second is a performance issue and causes problems for seeding torrents. Both problems can be solved with well planned, consistent paths.
-                                </p>
-                                <p>
-                                    Most Docker images suggest paths like <code>/music</code> and <code>/downloads</code>. This causes slow moves and doesn't allow hard links because they
-                                    are considered two different file systems <i>inside</i> the container. Some also recommend paths for the download client container that are different from the Lidarr container, like <code>/torrents</code>.<br>
-                                    The best solution is to use a single, common volume <i>inside</i> the containers, such as <code>/data</code>.
-                                    Your Music would be in <code>/data/Music</code>, torrents in <code>/data/downloads/torrents</code> and/or usenet downloads in <code>/data/downloads/usenet</code>.
-                                </p>
-                                <p>
-                                    If this advice is not followed, you may have to configure a Remote Path Mapping in the Lidarr web UI (Settings &rsaquo; Download Clients).
-                                </p>
-                                <h5>Ownership and Permissions</h5>
-                                <p>
-                                    Permissions and ownership of files is one of the most common problems for Lidarr users, both inside and outside Docker. Most images have environment variables that can be used to override
-                                    the default user, group and umask, you should decide this before setting up all of your containers.
-                                    The recommendation is to use a common group for all related containers so that each container can use the shared group permissions to read and write files on the mounted volumes.<br>
-                                    Keep in mind that Lidarr will need read and write to the download folders as well as the final folders.
-                                </p>
-                                <p>
-                                    <i>For a more detailed explanation of these issues, see <a href=https://wiki.servarr.com/Docker_Guide>The Best Docker Setup and Docker Guide</a> wiki article.</i>
-                                </p>
-                            </dd> -->
                             <dt><span class=step>1</span>Install Kavita</dt>
                             <dd>
                                 <p>
-                                    To install and use these Docker images, follow the instructions in our repository
-                                <ul>
-                                    <li>
-                                        <h5><a href=https://github.com/Kareadita/Kavita target="_blank">Kizaing/KavitaDocker</a></h5>
-                                        <!-- <p>
-                                            <a href=https://hotio.dev>hotio</a> doesn't specify any default volumes, besides <code>/config</code>. Images are automatically updated 2x in 1 hour if upstream changes are found.
-                                            Read the <a href=https://hotio.dev/containers/Lidarr>instructions</a> on how to install the image.
-                                        </p> -->
-                                    </li>
-                                    <!-- <li>
-                                        <h5><a href=https://hub.docker.com/r/linuxserver/Lidarr>ghcr.io/linuxserver/Lidarr:latest</a></h5>
-                                        <p>
-                                            <a href=//www.linuxserver.io>linuxserver.io</a> is one of the most prolific and popular Docker image maintainers. They also maintain images for most of the popular download clients as well.
-                                            LinuxServer specifies a couple of default volumes such as <code>/music</code> and <code>/downloads</code>. Our recommendation is to use a single volume for the data, as mentioned above.
-                                        </p>
-                                    </li> -->
-                                </ul>
+                                    To install and use the Docker image, run the following command:<br>
+                                </p>
+                                <p style="margin-left: 20px">
+                                    <pre>docker run --name kavita -p 5000:5000 \
+    -v /your/manga/directory:/manga \
+    -v /kavita/data/directory:/kavita/data \
+    --restart unless-stopped \
+    -d kizaing/kavita:latest</pre>
+                                </p>
+                                <p>
+                                    Alternatively you can use <a href=https://github.com/Kareadita/Kavita#docker target="_blank">docker-compose file</a>:
+                                </p>
+
+                                <p style="margin-left: 20px">
+<pre>version: '3.9'
+    services:
+        kavita:
+            image: kizaing/kavita:latest
+            volumes:
+                - ./manga:/manga
+                - ./data:/kavita/data
+            ports:
+                - "5000:5000"
+            restart: unless-stopped</pre>
                                 </p>
                             </dd>
                         </dl>
@@ -460,7 +471,7 @@
                     <div class="tab-pane fade" id=downloads-v1-other role=tabpanel>
                         <div class="alert alert-info">
                             Please contact us if you wish to port Kavita for any other platform that the ones already listed.<br>
-                            We prefer to coordinate the port.
+                            We prefer to coordinate the port, please reach out on Github or Discord.
                         </div>
                     </div>
                 </div>
@@ -473,7 +484,7 @@
                 <h3>Support</h3>
             </div>
             <div class=row>
-                <a class=col-sm-3 href=https://github.com/Kareadita/Kavita/wiki target=_blank>
+                <a class=col-sm-3 href=https://wiki.kavitareader.com/ target=_blank>
                     <div class=text>
                         <i class="far fa-lightbulb fa-2x"></i>
                         <h4>Wiki</h4>
