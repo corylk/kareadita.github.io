@@ -252,7 +252,7 @@
                     <ul aria-describedby="file-support">
                         <li>Manga/Comics: ZIP, RAR, CBR, CBZ, CB7, CBT, TAR.GZ, 7ZIP/7Z</li>
                         <li>Books: EPUB2, EPUB3, PDF</li>
-                        <li>Raw Images: JPG/JPEG, PNG</li>
+                        <li>Raw Images: JPG/JPEG, PNG, WebP</li>
                     </ul>
                     <li id="manga-reader">Manga/Comic Reader</li>
                     <ul aria-describedby="manga-reader">
@@ -260,7 +260,7 @@
                         <li>Image Splitting for those joined page spreads, don't scroll on your tablet, just split</li>
                         <li>Apply a custom dark or sepia tone to your images to make it easier to read at night</li>
                         <li>Reading Direction: Left/Right, Up/Down</li>
-                        <li>Webtoon reader built in</li>
+                        <li>Webtoon reader (scrolling) built in</li>
                         <li>Read across archives without closing the reader</li>
                     </ul>
                     <li id="book-reader">Book Reader</li>
@@ -281,6 +281,7 @@
                     <li>Cross Platform with no dependencies - Everything in the box</li>
                     <li>Responsive and Fast!</li>
                     <li>Full text search to quickly find what you want to read</li>
+                    <li>Group and Organize your files with collections and reading lists</li>
                     <li>Mixed media Libraries - Light Novels and Manga can be right next to each other</li>
                     <li>Fast and efficient library scans. Don't perform I/O if the underlying file hasn't changed.</li>
                     <li>Accessibility first - audits for color contrast, screen reader, and keyboard only</li>
@@ -445,7 +446,6 @@
                                 <ul>
                                     <li><code>:nightly</code> which is the bleeding edge builds. Best to use if you are in the discord to actively test</li>
                                     <li><code>:latest</code> which is the latest stable build</li>
-                                    <li><code>:alpine</code> which is a smaller image, but only supported on x64 systems</li>
                                 </ul>
                             </dd>
                             <dt><span class=step>1</span>Install Kavita</dt>
@@ -456,7 +456,7 @@
                                 <p style="margin-left: 20px">
                                     <pre>docker run --name kavita -p 5000:5000 \
     -v /your/manga/directory:/manga \
-    -v /kavita/data/directory:/kavita/data \
+    -v /kavita/data/directory:/kavita/config \
     --restart unless-stopped \
     -d kizaing/kavita:latest</pre>
                                 </p>
@@ -471,7 +471,7 @@
             image: kizaing/kavita:latest
             volumes:
                 - ./manga:/manga
-                - ./data:/kavita/data
+                - ./data:/kavita/config
             ports:
                 - "5000:5000"
             restart: unless-stopped</pre>
