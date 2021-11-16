@@ -75,6 +75,21 @@ body a:focus {
   color: #fff;
 }
 /*************************************************************
+                        section#hero
+**************************************************************/
+#hero {
+  background-image: url('../../img/background/login-bg.jpg');
+  color: #fff;
+  padding: 20px 0;
+  height: 400px;
+}
+#hero .feature {
+  padding: 20px 10px;
+}
+#hero a {
+  color: #fff;
+}
+/*************************************************************
                         section#features
 **************************************************************/
 #features {
