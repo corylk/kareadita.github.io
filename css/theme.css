@@ -827,12 +827,6 @@ li.active a svg.icon g path {
 }
 
 #hero {
-    /*background-image: url('../img/background/login-bg.jpg');
-    color: #fff;
-    margin: 20px 0;
-    height: 530px;
-    background-size: cover;
-    opacity: 80%;*/
     width: 100%;
     background-color: #333;
     height: 530px;
