@@ -470,15 +470,15 @@
 
                                 <p style="margin-left: 20px">
 <pre>version: '3.9'
-    services:
-        kavita:
-            image: kizaing/kavita:latest
-            volumes:
-                - ./manga:/manga
-                - ./data:/kavita/config
-            ports:
-                - "5000:5000"
-            restart: unless-stopped</pre>
+services:
+    kavita:
+        image: kizaing/kavita:latest
+        volumes:
+            - ./manga:/manga
+            - ./data:/kavita/config
+        ports:
+            - "5000:5000"
+        restart: unless-stopped</pre>
                                 </p>
                             </dd>
                         </dl>
