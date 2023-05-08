@@ -57,7 +57,8 @@
                     <li><a href=#download><i class="fas fa-download" aria-hidden="true"></i> DOWNLOAD</a></li>
                     <li><a href=#support><i class="fas fa-question-circle" aria-hidden="true"></i> SUPPORT</a></li>
                     <li><a href=#demo><i class="fas fa-desktop" aria-hidden="true"></i> DEMO</a></li>
-                    <li><a href=https://github.com/Kareadita/Kavita target=_blank><i class="fab fa-github-alt" aria-hidden="true"></i> GITHUB</a></li>
+                    <li><a href="https://www.kavitareader.com/docs/api/#/" target=_blank><i class="fab fa-dev" aria-hidden="true"></i>API</a></li>
+                    <li><a href="https://github.com/Kareadita/Kavita" target=_blank><i class="fab fa-github-alt" aria-hidden="true"></i> GITHUB</a></li>
                 </ul>
             </div>
         </div>
@@ -404,16 +405,40 @@
                             <dt><span class=step>2</span>Install App</dt>
                             <dd>
                                 <p>
-                                    Open the archive and unzip to a folder
+                                    Open the archive and unzip to a folder. For example using Terminal:
+                                    <pre>
+                                        cd ~
+                                        mv ~/Downloads/kavita-osx-x64.tar.gz ~
+                                        tar -xf kavita-osx-x64.tar.gz
+                                    </pre>
                                 </p>
                                 <div class="alert alert-warning">
                                     Kavita v0.8+ is not compatible with OSX versions < 10.13 due to netcore compatability. </div>
                             </dd>
+                            <dt><span class=step>3</span>Make Kavita executable</dt>
+                            <dd>
+                                <p>
+                                    Use Terminal and run the following command: 
+                                    <pre>sudo chmod +x ~/Kavita/Kavita</pre>
+                                </p>
+                                <div class="alert alert-note">Disable Gatekeeper for Kavita's folder so that Kavita and all .dll and .dylib files can be opened: <pre>xattr -r -d com.apple.quarantine ~/Kavita/</pre></div>
+                                <div class="alert alert-warning">Kavita v0.8+ is not compatible with OSX versions < 10.13 due to netcore compatability.</div>
+                            </dd>
+                            <dt><span class=step>3</span>Help Kavita find Sqlite</dt>
+                            <dd>
+                                <p>
+                                    Use Terminal and run the following command: 
+                                    <pre>export alias sqlite=sqlite3</pre>
+                                </p>
+                            </dd>
                             <dt><span class=step>3</span>Start Kavita</dt>
                             <dd>
                                 <p>
-                                    Open Kavita.app in your folder.
+                                    Use Terminal and run the following commands:
+                                    <pre>cd ~/Kavita
+                                    ./Kavita</pre>
                                 </p>
+                                <div class="alert alert-note">You need to launch Kavita from within the ~/Kavita folder, or else appsettings.json will fail to be acquired.</div>
                             </dd>
                             <dt><span class=step>4</span>View Kavita</dt>
                             <dd>
